@@ -17,6 +17,7 @@ class AppColors {
   static const Color appBarBackgroundLight = Color(0xFFB2EBF2); // Azul-claro
   static const Color appBarIconLight = Colors.black; // Ícones no AppBar
   static const Color appBarTitleLight = Colors.black; // Título no AppBar
+  static const Color dividerColorLight = Color(0xFFE0E0E0); // Divisor
 }
 
 class AppTheme {
@@ -32,11 +33,12 @@ class AppTheme {
       surface: AppColors.surfaceLight, // Cinza-claro para superfícies
       onSurface: AppColors.onSurfaceLight, // Texto em superfícies
     ),
-    scaffoldBackgroundColor: AppColors.backgroundLight, // Fundo branco
+    scaffoldBackgroundColor: AppColors.backgroundLight,
+    dividerColor: AppColors.dividerColorLight, // Fundo branco
     appBarTheme: AppBarTheme(
       backgroundColor: AppColors.primaryLight, // Azul-claro
       elevation: 0,
-      iconTheme: IconThemeData(color: AppColors.appBarIconLight),
+      iconTheme: const IconThemeData(color: AppColors.appBarIconLight),
       titleTextStyle: TextStyle(
         color: AppColors.appBarTitleLight,
         fontSize: 20.sp,
